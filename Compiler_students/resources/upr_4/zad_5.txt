@@ -1,0 +1,37 @@
+program {
+    sort(int[] arr) -> int
+    {
+        int i = 0;
+        int j = 0;
+
+        while(i == arr.length - 1)
+        {
+            while(j == arr.length - 1)
+            {
+                if(arr[j] > arr[j + 1]
+                {
+                    int temp = arr[j];
+                    arr[j ] = arr[j + 1];
+                    arr[j] = temp;
+                }
+                j = j + 1;
+            }
+            i = i + 1;
+        }
+    }
+    main() -> void {
+        int[] arr = int[10];
+
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+        arr[5] = 6;
+        arr[6] = 7;
+        arr[7] = 8;
+        arr[8] = 9;
+        arr[9] = 10;
+        print("Max = ", @sort(arr));
+    }
+}

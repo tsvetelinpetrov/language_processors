@@ -1,0 +1,14 @@
+program {
+    faktoriel(int a) -> int
+    {
+        if(a > 0)
+        {
+            return a * @faktoriel(a - 1);
+        }
+        return -1;
+    }
+    main() -> void
+    {
+        print("Faktoriel = ", @faktoriel(5));
+    }
+}
