@@ -207,7 +207,7 @@ public class LexerImpl extends Lexer<TokenType> {
         /* The current character is written in ch */
         /* If ch is a character between 'a' and 'z' or between 'A' and 'Z', return true */
         if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z') ) {
-            return true; /* ToDo - REPLACE true */
+            return true;
         }else return false;
     }
 
@@ -216,7 +216,7 @@ public class LexerImpl extends Lexer<TokenType> {
     private boolean isDigit(char ch) {
         /* If ch is a character between '0' and '9', return true */
         if(ch>='0' && ch<='9') {
-            return true; /* ToDo - REPLACE true */
+            return true;
         }else return false;
     }
 
