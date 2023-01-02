@@ -1,5 +1,6 @@
 program {
     int num = 0;
+    int z = 1;
 
     fib(int num, int[] memo) -> int {
          if (memo[num] > 0) {
@@ -14,6 +15,7 @@ program {
     }
 
     main() -> void {
+        z = 5;
         print("Please enter a non-negative number:");
         read(num);
         if (num < 0) {

@@ -1,21 +1,5 @@
 program {
   main() -> void {
-    //char b=5;
-    //int a = (2 + 5) * 2;
-    //print("a = ", a);
-
-    int c = 0;
-    char[] a = "This is an array of characters";
-    a(2+1)* = 'A';
-    if (c == 0) {
-        //int v=0;
-        a[0] = 'B';
-    }
-    else {
-        a[0] = 'A';
-    }
-    //print(v);
-    //print(b);
-    //print('A');
+    print("Hello World");
   }
 }

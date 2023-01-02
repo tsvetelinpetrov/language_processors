@@ -397,7 +397,11 @@ public class SemanticAnalyzer implements SemanticVisitor {
     }
 
     public static void main(String[] args) throws IOException {
-        Lexer<TokenType> lexer = new LexerImpl(new SourceImpl("E:\\Intellij Project\\20200920_104942_Compiler_students_IntelliJ\\Compiler_students_IntelliJ\\Compiler_students\\resources\\HelloWorld.txt"));
+        String program = "Fib.txt";
+        //String program = "HelloWorld.txt";
+        //String program = "upr_4/zad_2.txt"; // zad_1.txt   -   zad_7.txt
+
+        Lexer<TokenType> lexer = new LexerImpl(new SourceImpl("Compiler_students/resources/" + program));
         Parser<TokenType, AST> parser = new ParserImpl(lexer);
         ProgramBodyNode root = (ProgramBodyNode) parser.entryRule();
         SemanticVisitor semanticVisitor = new SemanticAnalyzer();
